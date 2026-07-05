@@ -82,7 +82,7 @@ The actual project development is the main part of the program. Post your regula
 | [Charles](https://github.com/creese)                 |                                                  |        |        |                  |
 | [Conall](https://github.com/XRS-001/)                |                                                  |        |        |                  |
 | [Cristian](https://github.com/conache/)              |                                                  |        |        |                  |
-| [Daniel](https://github.com/perfogic)                |                                                  |        |        |                  |
+| [Daniel](https://github.com/perfogic)                | [Update 3](https://hackmd.io/@perfogic/rkJxeWdXMe) |        |        |                  |
 | [Hans](https://github.com/vuonghuuhung)              |                                                  |        |        |                  |
 | [Ifeoluwa](https://github.com/owanikin)              |                                                  |        |        |                  |
 | [Isaac](https://github.com/isaac-akhigbe)            |                                                  |        |        |                  |

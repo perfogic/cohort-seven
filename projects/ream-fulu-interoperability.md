@@ -16,7 +16,7 @@ This project therefore aims to complete Ream’s beacon-client implementation, a
 
 We will implement and validate Fulu interoperability in Ream in six phases:
 
-1. **Fulu specification gap analysis**: compare Ream's beacon-client implementation against the Fulu consensus specifications, identify missing or incorrect functionality, and produce a concrete implementation and testing backlog.
+1. **Fulu specification gap analysis**: compare Ream's beacon-client implementation against the Fulu consensus specifications, identify missing or incorrect functionality which were described on spec, and produce a concrete implementation and testing backlog.
 
 2. **Ream multi-node end-to-end testing**: implement end-to-end tests for networks containing multiple Ream beacon nodes, identify and fix protocol and implementation issues, and demonstrate that the nodes can reliably process blocks, agree on the canonical chain, and reach finality.
 
@@ -63,41 +63,42 @@ We will implement and validate Fulu interoperability in Ream in six phases:
 
 The phases are ordered by dependency, with some overlap between testing, interoperability, and PeerDAS implementation.
 
-**Phase 1 - Fulu specification gap analysis (weeks 5-7)**
+**Phase 1 - Fulu specification gap analysis (weeks 0-4)**
 
 - Compare Ream with the Fulu consensus specifications.
 - Identify missing or incorrect beacon-client functionality.
 - Create an implementation and testing backlog.
 
-**Phase 2 - Ream end-to-end testing (weeks 7-10)**
+**Phase 2 - Multi-node Ream beacon network (weeks 5-9)**
 
-- Run multiple Ream beacon nodes in the same network.
-- Fix synchronization, block-processing, and networking issues.
-- Demonstrate reliable block production and finality.
+- Implement end-to-end tests for running multiple Ream beacon nodes.
+- Identify and fix synchronization, block-processing, mis-matched in old specs and networking issues.
+- Ensure the network can reliably produce and finalize blocks.
 
-**Phase 3 - Kurtosis and cross-client interoperability (weeks 10-15)**
+**Phase 3 - Kurtosis and cross-client interoperability (weeks 6-10) - Parallel with Phase 2**
 
 - Integrate and launch Ream with Kurtosis.
 - Run Ream alongside Lighthouse and Prysm.
 - Identify and fix beacon-chain and networking incompatibilities.
 
-**Phase 4 - Full-custody PeerDAS and DA decoupling (weeks 14-18)**
+**Phase 4 - Full-custody PeerDAS and DA decoupling (weeks 11-14)**
 
 - Store and serve the complete blob dataset as PeerDAS data columns.
 - Implement data-column gossip and request/response protocols.
 - Separate DA validation, storage, retrieval, and availability tracking from beacon logic.
+- PeerDas compatibility when running Kurtosis on PeerDAS tests.
 
-**Phase 5 - PeerDAS custody mode (weeks 17-21)**
+**Phase 5 - PeerDAS custody mode (weeks 15-16)**
 
 - Implement custody-group calculation and subnet management.
 - Support configurable custody requirements.
 - Test column retrieval, verification, reconstruction, storage, and serving across clients.
 
-**Phase 6 - Hardening and standalone DA node (weeks 21-23, stretch)**
+**Phase 6 - Hardening and standalone DA node (weeks 16-21+, stretch)**
 
 - Fix remaining interoperability issues and add metrics and documentation.
-- Stabilize the beacon/DA interface.
-- Prototype a standalone DA node or integrate with related work.
+- Making sure everything run smooth with Prysm and Lighthouse.
+- Work on making a seperate standalone DA node if needed (Based on Ream's roadmap).
 
 ## Possible challenges
 
@@ -130,7 +131,7 @@ This establishes Ream as a Fulu-compatible client ready to participate in multi-
 - **Tosin** ([@tosynthegeek](https://github.com/tosynthegeek)):
 - **Hans Vuong** ([@vuonghuuhung](https://github.com/vuonghuuhung)):
 
-The areas above identify primary ownership rather than hard boundaries. Interoperability milestones will be reviewed and tested jointly because changes to the beacon, networking, and DA layers affect one another.
+The workload will be shared equally among the fellows throughout the project.
 
 ### Mentors
 
